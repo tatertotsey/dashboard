@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="h-item-group">
+        <div class="h-item search">
+          <img src="res/search_icon.svg" alt="Search" />
+          <input class="searchbar" type="search" placeholder=" " />
+        </div>
+        <div class="h-item alert">
+          <div class="notify-part">
+            <img src="res/alarm.svg" alt="notification" />
+
+            <div class="h-item profile">
+              <img src="res/account.svg" alt="profilepic" />Username
+            </div>
+          </div>
+        </div>
+
+        <div class="h-item profile-big">
+          <img src="res/account.svg" alt="profilepic-bigger" />
+          <div class="h-item name">
+            <p class="small-text">Hi there!</p>
+            <p class="username">User Name (@username)</p>
+          </div>
+        </div>
+
+        <div class="h-item buttons">
+          <button class="button new" type="button">New</button>
+          <button class="button upload" type="button">Upload</button>
+          <button class="button share" type="button">Share</button>
+        </div>
+      </div>
+    </header>
+
+    <nav class="sidebar">
+      <h2 class="sb-title">
+        <img src="res/dashboard_icon.svg" alt="icon" />Dashboard
+      </h2>
+
+      <div class="sb-top-group">
+        <div class="sb-top-item"><img src="res/home.svg" alt="icon" />Home</div>
+        <div class="sb-top-item">
+          <img src="res/profile.svg" alt="profile" />Profile
+        </div>
+        <div class="sb-top-item">
+          <img src="res/message.svg" alt="messages" />Messages
+        </div>
+        <div class="sb-top-item">
+          <img src="res/history.svg" alt="history" />History
+        </div>
+        <div class="sb-top-item">
+          <img src="res/tasks.svg" alt="tasks" />Tasks
+        </div>
+        <div class="sb-top-item">
+          <img src="res/communities.svg" alt="community" />Communities
+        </div>
+      </div>
+
+      <div class="sb-top-bottom">
+        <div class="sb-bottom-item">
+          <img src="res/settings.svg" alt="settings" />Settings
+        </div>
+        <div class="sb-bottom-item">
+          <img src="res/support.svg" alt="support" />Support
+        </div>
+        <div class="sb-bottom-item">
+          <img src="res/privacy.svg" alt="privacy" />Privacy
+        </div>
+      </div>
+    </nav>
+
+    <main class="main">
+      <div class="card-container">
+        <p class="main-title">My Projects</p>
+        <div class="cards"></div>
+        <div class="cards"></div>
+        <div class="cards"></div>
+        <div class="cards"></div>
+        <div class="cards"></div>
+        <div class="cards"></div>
+      </div>
+
+      <div class="announce-container">
+        <p class="announce-title">Announcements</p>
+        <div class="announce-items">A1</div>
+        <div class="announce-items">A2</div>
+        <div class="announce-items">A3</div>
+      </div>
+
+      <div class="trending-container">
+        <div class="trend-item">
+          <img src="res/trending-placeholder.svg" alt="placeholder" />Some icon
+          here
+          <p class="username">@1</p>
+          <p class="small-text">name1</p>
+        </div>
+        <div class="trend-item">
+          <img src="res/trending-placeholder.svg" alt="placeholder" />Some icon
+          here
+          <p class="username">@2</p>
+          <p class="small-text">name2</p>
+        </div>
+        <div class="trend-item">
+          <img src="res/trending-placeholder.svg" alt="placeholder" />Some icon
+          here
+          <p class="username">@3</p>
+          <p class="small-text">name3</p>
+        </div>
+        <div class="trend-item">
+          <img src="res/trending-placeholder.svg" alt="placeholder" />Some icon
+          here
+          <p class="username">@4</p>
+          <p class="small-text">name4</p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
