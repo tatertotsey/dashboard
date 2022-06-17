@@ -5,23 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
+    <link rel="icon" type="svg" href="/res/dashboard_icon.svg">
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
   </head>
 
   <body>
     <header class="header">
       <div class="h-item-group">
-        <div class="h-item search">
-          <img src="res/search_icon.svg" alt="Search" />
-          <input class="searchbar" type="search" placeholder=" " />
-        </div>
+        <form class="h-item search" role="search" id="form">
+          <button class="search_">
+            <img src="res/search_icon.svg" alt="Search" />
+          </button>
+          <input
+            class="searchbar"
+            type="search"
+            name="q"
+            id="query"
+            placeholder=" "
+            aria-label="Search through site content"
+          />
+        </form>
         <div class="h-item alert">
           <div class="notify-part">
             <img src="res/alarm.svg" alt="notification" />
 
             <div class="h-item profile">
-              <img src="res/fox.svg" alt="profilepic" />Morgan Fox
+              <img src="res/fox.svg" alt="profilepic" />Tatsy Tots
             </div>
           </div>
         </div>
@@ -30,7 +39,7 @@
           <img src="res/fox.svg" alt="profilepic-bigger" />
           <div class="h-item name">
             <p class="small-text">Hi there!</p>
-            <p class="username">Morgan Fox (@foxy_morgan)</p>
+            <p class="username">Tatsy Tots (<a href=https://github.com/tatertotsey><img class='git' src="res/git.png" alt="git-logo"></a>tatertotsey)</p>
           </div>
         </div>
 
